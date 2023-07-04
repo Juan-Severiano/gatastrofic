@@ -1,0 +1,21 @@
+.input-pass {
+    border-radius: 20px;
+}
+
+img {
+    max-width: 300px;
+}
+
+div p{
+    color: red;
+}
+
+pre {
+    font-family: monospace;
+      font-size: 24px;
+}
+
+.fa-heart {
+    color: red;
+    font-size: 100px;
+  }
