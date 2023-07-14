@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/Minecraft.ttf');
+ }
 .input-pass {
     border-radius: 20px;
 }
@@ -6,7 +10,7 @@ img {
     max-width: 300px;
 }
 
-div p {
+form div p {
     color: red;
 }
 
@@ -15,33 +19,94 @@ pre {
     font-size: 24px;
 }
 
+#intro {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#text-intro {
+    max-width: 500px;
+}
+
+.gatitio img {
+    max-width: 400px;
+}
+
 .fa-heart {
     color: red;
     font-size: 100px;
 }
 
-/* body#index2 {
+body#index2 {
     background-color: pink;
-} */
+}
 
-section.container{
+section.container {
     min-height: 100vh;
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title img {
+    min-width: 400px;
+}
+
 .parallax-container {
-    height: 100vh; /* Ajuste a altura conforme necessário */
+    height: 100vh;
     overflow: hidden;
     position: relative;
-  }
-  
-  .parallax-element {
+}
+
+.parallax-element {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://i.ytimg.com/vi/6Aaw7LzNQ88/maxresdefault.jpg'); /* Substitua pela imagem desejada */
+    background-image: url('https://i.ytimg.com/vi/6Aaw7LzNQ88/maxresdefault.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+
+.minecraft-font {
+    font-family: 'Minecraft';
+}
+
+@media (max-width: 500px) {
+    .parallax-element {
+        width: 400px;
+    }
+    #intro {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #text-intro {
+        max-width: 250px;
+    }
+    .gatitio img {
+        max-width: 250px;
+    }
+    .gatitio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .parallax-element {
+        max-width: 350px;
+    }
+    .parallax-container {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title img {
+        min-width: 300px;
+    }
+}
