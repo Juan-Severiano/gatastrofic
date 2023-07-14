@@ -1,7 +1,12 @@
 @font-face {
     font-family: 'Minecraft';
     src: url('../fonts/Minecraft.ttf');
- }
+}
+
+:root{
+    --gap: 3rem;
+}
+
 .input-pass {
     border-radius: 20px;
 }
@@ -35,6 +40,60 @@ pre {
 .fa-heart {
     color: red;
     font-size: 100px;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+
+.grid-description {
+    padding-bottom: 5rem;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.grid-one-content h2 {
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
 
 body#index2 {
@@ -76,36 +135,55 @@ section.container {
 
 .minecraft-font {
     font-family: 'Minecraft';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://gamefm.com.br/wp-content/uploads/2013/03/mine.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 500px) {
     .parallax-element {
         width: 400px;
     }
+
     #intro {
         flex-direction: column;
         justify-content: center;
     }
+
     #text-intro {
         max-width: 250px;
     }
+
     .gatitio img {
         max-width: 250px;
     }
+
     .gatitio {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    .grid-one-content {
+        display: block;
+    }
+
     .parallax-element {
         max-width: 350px;
     }
+
     .parallax-container {
         margin: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .title img {
         min-width: 300px;
     }
