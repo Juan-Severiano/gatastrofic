@@ -3,8 +3,12 @@
     src: url('../fonts/Minecraft.ttf');
 }
 
-:root{
+:root {
     --gap: 3rem;
+}
+
+* {
+    list-style: none;
 }
 
 .input-pass {
@@ -49,6 +53,7 @@ pre {
 
 .grid-description {
     padding-bottom: 5rem;
+    font-size: 20px;
 }
 
 .grid-one-content {
@@ -94,6 +99,17 @@ pre {
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.gallery {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/fotos-premium/ambiente-de-fundo-2d-enchanted-forest-para-um-jogo-movel-de-arena-de-batalha-generative-ai_742252-13567.jpg?w=2000');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body#index2 {
