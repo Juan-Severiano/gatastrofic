@@ -85,6 +85,11 @@ pre {
     transform: rotate(5deg);
 }
 
+.nav-link:hover {
+    transform: scale(1.05);
+    color: #292929;
+}
+
 .gallery-img {
     width: 100%;
     max-width: 36rem;

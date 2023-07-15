@@ -50,15 +50,3 @@ pass.addEventListener('keyup', () => {
         msgError.classList.add('d-none')
     }
 })
-
-
-window.addEventListener('scroll', function () {
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    var parallaxElements = document.getElementsByClassName('parallax-element');
-
-    for (var i = 0; i < parallaxElements.length; i++) {
-        var speed = parallaxElements[i].getAttribute('data-speed');
-        var yPos = -(scrollTop * speed);
-        parallaxElements[i].style.transform = 'translate3d(0px, ' + yPos + 'px, 0px)';
-    }
-});
